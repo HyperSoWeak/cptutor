@@ -15,14 +15,15 @@
 
 </div>
 
-### A+B
+### ZeroJudge a001. 哈囉
 
 <span class="difficulty basic">basic</span>
 
 <div class="problem-meta">
 
-- OJ: ZeroJudge or local
-- Topic: input, output
+- OJ: ZeroJudge
+- Link: https://zerojudge.tw/ShowProblem?problemid=a001
+- Topic: input, output, string
 - 建議練習時機：課堂練習
 
 </div>

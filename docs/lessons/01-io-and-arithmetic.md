@@ -72,9 +72,9 @@ int main() {
 
 ## 課堂練習
 
-- basic：一題 A+B 或四則運算題。
-- standard：一題需要整數除法或取餘數的題。
-- challenge：一題需要讀多個數字並組合公式的題。
+- basic：[AtCoder Beginners Selection - ABC086A Product](https://atcoder.jp/contests/abs/tasks/abc086_a)
+- standard：[Kattis - Tarifa](https://open.kattis.com/problems/tarifa)
+- challenge：[Kattis - Planina](https://open.kattis.com/problems/planina)
 
 ## 常見錯誤
 
@@ -84,10 +84,10 @@ int main() {
 
 ## 回家練習
 
-- basic：AtCoder Beginners Selection - ABC086A Product。
-- standard：Kattis - Tarifa。
-- challenge：Kattis - Planina。
+- basic：[AtCoder Beginners Selection - ABC081A Placing Marbles](https://atcoder.jp/contests/abs/tasks/abc081_a)
+- standard：[ZeroJudge a001. 哈囉](https://zerojudge.tw/ShowProblem?problemid=a001)
+- challenge：[AtCoder Beginners Selection - ABC081B Shift only](https://atcoder.jp/contests/abs/tasks/abc081_b)
 
 ## 進階練習
 
-- 從 ZeroJudge 挑一題只需要輸入、輸出、四則運算的中文題。
+- [ZeroJudge a005. Eva 的回家作業](https://zerojudge.tw/ShowProblem?problemid=a005)

@@ -20,6 +20,7 @@
 - 不使用 pure Vite 作為第一版，因為目前需求是講義、章節導覽、題單與 code block，不是 app-like interactive features。
 - 第一版採 Approach A：VitePress 教材站 + Markdown 題單。
 - 學生網站不包含給老師看的語氣或內部決策頁。
+- 不保留獨立 setup 頁面；環境設定直接整合進 Lesson 0。
 
 ## 課程模式
 
@@ -32,6 +33,8 @@
   - standard：需要思考本堂核心觀念。
   - challenge：給進度快的人。
 - 解題內容：題目 + 分層提示 + 參考解法。
+- Lesson 是一次 2 小時課程內容，不是單一主題百科。
+- Lesson 內容應能順著講下去，避免教案表格式 section。
 
 ## C++ 與 local setup
 
@@ -60,17 +63,14 @@ g++ -std=c++17 -O2 -Wall main.cpp
 ## 課程格式
 
 ```text
-# Lesson N: Topic
+# Lesson N: 課程名稱
 
-## Goals
-## Required C++ Syntax
-## Competitive Programming Idea
-## Template
+## 本課目標
+## 主題背景或工作流程
+## 必要語法與觀念
 ## 示範題
-## In-class Practice
-## Common Mistakes
-## Homework
-## Extra Problems
+## 練習
+## 常見錯誤
 ```
 
 ## 題目格式
@@ -90,3 +90,5 @@ g++ -std=c++17 -O2 -Wall main.cpp
 ### Solution idea
 ### Reference code
 ```
+
+所有正式列入教材的題目都必須附上 link。

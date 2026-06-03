@@ -7,7 +7,6 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     nav: [
-      { text: "環境設定", link: "/setup/" },
       { text: "課程講義", link: "/lessons/00-local-setup-and-oj" },
       { text: "練習題", link: "/problemsets/week-01" }
     ],
@@ -19,18 +18,9 @@ export default defineConfig({
         ]
       },
       {
-        text: "環境設定",
-        items: [
-          { text: "總覽", link: "/setup/" },
-          { text: "macOS", link: "/setup/macos" },
-          { text: "Linux", link: "/setup/linux" },
-          { text: "Windows WSL2", link: "/setup/windows-wsl2" }
-        ]
-      },
-      {
         text: "課程講義",
         items: [
-          { text: "00. Local setup + OJ", link: "/lessons/00-local-setup-and-oj" },
+          { text: "00. 開發環境與 OJ 流程", link: "/lessons/00-local-setup-and-oj" },
           { text: "01. I/O + arithmetic", link: "/lessons/01-io-and-arithmetic" },
           { text: "02. 條件判斷", link: "/lessons/02-conditions" }
         ]

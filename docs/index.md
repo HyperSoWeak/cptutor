@@ -6,7 +6,8 @@
 
 ## 怎麼使用這份講義
 
-- 依序閱讀 `lessons/` 的每堂講義。
+- 從 [Lesson 0: C++ 開發環境與 Online Judge 基本流程](/lessons/00-local-setup-and-oj) 開始。
+- 依序閱讀每堂講義。
 - 每堂課完成示範題與課堂練習。
 - 回家練習放在 `problemsets/`。
 - 進度較快時，可以繼續做 `extras/` 的進階練習題。

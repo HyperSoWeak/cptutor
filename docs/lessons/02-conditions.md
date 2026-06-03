@@ -77,9 +77,9 @@ int main() {
 
 ## 課堂練習
 
-- basic：判斷奇偶或大小關係。
-- standard：有 3 個以上 cases 的條件題。
-- challenge：需要先推導條件再寫 code 的題。
+- basic：[AtCoder Beginners Selection - ABC086A Product](https://atcoder.jp/contests/abs/tasks/abc086_a)
+- standard：[ZeroJudge a004. 文文的求婚](https://zerojudge.tw/ShowProblem?problemid=a004)
+- challenge：[AtCoder ABC083A - Libra](https://atcoder.jp/contests/abc083/tasks/abc083_a)
 
 ## 常見錯誤
 
@@ -89,10 +89,10 @@ int main() {
 
 ## 回家練習
 
-- basic：AtCoder Beginners Selection - ABC081A Placing Marbles。
-- standard：ZeroJudge 一題條件判斷中文題。
-- challenge：Kattis - Which Kind of Triangle。
+- basic：[AtCoder Beginners Selection - ABC081A Placing Marbles](https://atcoder.jp/contests/abs/tasks/abc081_a)
+- standard：[ZeroJudge a004. 文文的求婚](https://zerojudge.tw/ShowProblem?problemid=a004)
+- challenge：[AtCoder ABC083A - Libra](https://atcoder.jp/contests/abc083/tasks/abc083_a)
 
 ## 進階練習
 
-- 收集 3 題不同形式的 case analysis 題。
+- [AtCoder ABC088A - Infinite Coins](https://atcoder.jp/contests/abc088/tasks/abc088_a)
