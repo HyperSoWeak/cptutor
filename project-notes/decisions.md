@@ -1,69 +1,50 @@
-# 決策紀錄
+# 教材規範
 
-本頁記錄已確認的教材決策，讓課程設計可以重現。這份文件是專案內部紀錄，不放在學生網站導覽中。
+本文件記錄可重複套用的教材規範。一次性修改紀錄、已完成狀態、特定頁面目前內容不放在這裡。
 
-## 目標受眾
+## 受眾與語言
 
-- 教材用途：演算法競賽教學講義。
-- 目標受眾：有一點 Python 經驗，但幾乎可視為初學者；未學過 C++。
-- 語言：教材使用繁體中文，技術名詞與程式碼保留 English。
-- 教學型態：可能一對多，每個人進度不同。
-- 課程長度：無限次。
-- 每次時間：2 小時。
+- 受眾：有少量 Python 經驗，但幾乎可視為初學者；未學過 C++。
+- 教材語言：繁體中文。
+- 程式碼、指令、技術名詞可保留 English，例如 `g++`、`cin`、`online judge`。
+- 學生網站只寫給學生看，不使用給授課者看的語氣或內部決策內容。
+- 文字語氣採正式講義式，避免過度口語或過度友善。
 
-## 網站
+## 網站與部署
 
-- 教材呈現：VitePress static site。
+- 技術：VitePress。
 - 內容來源：Markdown-first。
-- 部署目標：GitHub Pages。
-- GitHub Pages base path：目前假設 repo name 是 `cptutor`，所以 VitePress `base` 設為 `/cptutor/`。
-- 不使用 pure Vite 作為第一版，因為目前需求是講義、章節導覽、題單與 code block，不是 app-like interactive features。
-- 第一版採 Approach A：VitePress 教材站 + Markdown 題單。
-- 學生網站不包含給老師看的語氣或內部決策頁。
-- 不保留獨立 setup 頁面；環境設定直接整合進 Lesson 0。
+- 部署：GitHub Pages。
+- Package manager：pnpm。
+- GitHub Pages base path 目前依 repo name 使用 `/cptutor/`。
+- 不使用 pure Vite，除非未來需要 app-like interactive features。
 
-## 課程模式
+## 課程設計
 
-- 每堂課用一個競賽主題帶 C++ 語法。
-- 每堂課都要搭配課堂題目與回家練習題。
-- 題目安排要讓學生有成就感，前期避免太多 trick 題。
-- 題目難度策略：正常競賽入門。
-- 每堂題目分層：
-  - basic：簡單、建立成就感。
-  - standard：需要思考本堂核心觀念。
-  - challenge：給進度快的人。
-- 解題內容：題目 + 分層提示 + 參考解法。
-- Lesson 是一次 2 小時課程內容，不是單一主題百科。
-- Lesson 內容應能順著講下去，避免教案表格式 section。
+- Lesson 是一次可完整學習的課程單元，不是單一主題百科。
+- 每個 lesson 以一組競賽題型或解題流程為核心，帶入必要 C++ 語法。
+- Lesson 內容應能順著閱讀與講解，避免教案表格式 section。
+- 練習題可以直接放在 lesson 內；獨立 `problemsets/` 不作為第一版主要入口。
+- 每堂課應包含課堂練習與少量回家練習。
+- 題目難度分層：
+  - basic：建立成就感。
+  - standard：練習本課核心觀念。
+  - challenge：給進度較快的人。
 
-## C++ 與 local setup
+## Lesson 格式
 
-- C++ 標準：C++17。
-- C++ 教法：一開始就使用競賽常見模板。
-- 主線環境：macOS / Linux-like terminal workflow。
-- Windows 支援方式：用 WSL2 取得 Linux-like terminal，所以後續共用同一套指令。
-- 編譯與執行指令：
-
-```bash
-g++ -std=c++17 -O2 -Wall main.cpp
-./a.out < 1.in
-```
-
-## OJ 題源
-
-- 主力：
-  - ZeroJudge：中文題、入門題、台灣學生友善。
-  - AtCoder Beginners Selection / ABC A-B：入門競賽題品質穩。
-  - Kattis：英文簡題、stdin/stdout 訓練好。
-- 中後期：
-  - CSES：演算法主題完整。
-  - TIOJ / Sprout OJ：中文競賽題補充。
-  - Codeforces 800-1000：補充與混合練習，不放太前期主線。
-
-## 課程格式
+頁面標題與 sidebar 使用：
 
 ```text
-# Lesson N: 課程名稱
+Lesson N：課程名稱
+```
+
+不要使用 `Lesson 00` 或 `00.` 作為顯示文字；檔名可以保留排序用數字，例如 `00-local-setup-and-oj.md`。
+
+建議 lesson 結構：
+
+```text
+# Lesson N：課程名稱
 
 ## 本課目標
 ## 主題背景或工作流程
@@ -73,7 +54,12 @@ g++ -std=c++17 -O2 -Wall main.cpp
 ## 常見錯誤
 ```
 
-## 題目格式
+## 題目規範
+
+- 所有正式列入教材的題目都必須附上 online judge link。
+- 題目應標示 `basic`、`standard` 或 `challenge`。
+- 解題內容採「題目 + 分層提示 + 解題想法 + 參考程式碼」。
+- 題目格式：
 
 ```text
 ## Problem Name
@@ -82,13 +68,33 @@ g++ -std=c++17 -O2 -Wall main.cpp
 - Link:
 - Difficulty: basic / standard / challenge
 - Topic:
-- Recommended timing: 示範題 / in-class / homework / extra
+- Recommended timing: 示範題 / 課堂練習 / 回家練習 / 進階練習
 
-### Why this problem
-### Hint 1
-### Hint 2
-### Solution idea
-### Reference code
+### 題目重點
+### 提示 1
+### 提示 2
+### 解題想法
+### 參考程式碼
 ```
 
-所有正式列入教材的題目都必須附上 link。
+## C++ 與開發環境
+
+- C++ 標準：C++17。
+- 一開始就使用競賽常見模板。
+- 主線環境：macOS / Linux-like terminal workflow。
+- Windows 使用 WSL2 + Ubuntu 取得相同的 Linux-like terminal。
+- 環境設定放在 Lesson 0，不做獨立 setup 頁面。
+- 推薦編譯與執行流程：
+
+```bash
+g++ -std=c++17 -O2 -Wall main.cpp
+./a.out < 1.in
+```
+
+## OJ 題源
+
+- 中文題優先來源：ZeroJudge。
+- 英文入門題來源：AtCoder Beginners Selection、AtCoder ABC A/B、Kattis。
+- 中後期演算法題源：CSES。
+- TIOJ / Sprout OJ 可作為中文競賽題補充。
+- Codeforces 800-1000 可作為補充與混合練習，不作前期主線。

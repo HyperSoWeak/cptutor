@@ -19,7 +19,7 @@ export default defineConfig({
       {
         text: "課程講義",
         items: [
-          { text: "00. 開發環境與 OJ 流程", link: "/lessons/00-local-setup-and-oj" }
+          { text: "Lesson 0：開發環境與 OJ 流程", link: "/lessons/00-local-setup-and-oj" }
         ]
       }
     ],

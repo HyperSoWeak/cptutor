@@ -1,4 +1,4 @@
-# Lesson 0: C++ 開發環境與 Online Judge 基本流程
+# Lesson 0：C++ 開發環境與 Online Judge 基本流程
 
 ## 本課目標
 
