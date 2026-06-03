@@ -211,19 +211,10 @@ hello, world
 
 Sample test 通過只代表程式通過題目公開範例，不代表一定會 AC。
 
-## 示範題：ZeroJudge a001. 哈囉
+## 示範題：[ZeroJudge a001. 哈囉](https://zerojudge.tw/ShowProblem?problemid=a001)
 
-<span class="difficulty basic">basic</span>
-
-<div class="problem-meta">
-
-- OJ: ZeroJudge
-- Link: https://zerojudge.tw/ShowProblem?problemid=a001
-- Difficulty: basic
+- Difficulty: <span class="difficulty basic">basic</span>
 - Topic: input, output, string
-- 建議練習時機：示範題
-
-</div>
 
 ### 題目重點
 

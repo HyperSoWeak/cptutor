@@ -32,11 +32,19 @@
 
 ## Lesson 格式
 
-頁面標題與 sidebar 使用：
+頁面標題使用：
 
 ```text
 Lesson N：課程名稱
 ```
+
+sidebar 顯示使用短格式：
+
+```text
+LN：課程名稱
+```
+
+例如 `L0：開發環境與 OJ 流程`、`L1：整數、條件判斷與迴圈`。
 
 不要使用 `Lesson 00` 或 `00.` 作為顯示文字；檔名可以保留排序用數字，例如 `00-local-setup-and-oj.md`。
 
@@ -57,17 +65,18 @@ Lesson N：課程名稱
 
 - 所有正式列入教材的題目都必須附上 online judge link。
 - 題目應標示 `basic`、`standard` 或 `challenge`。
+- 題目名稱直接使用 Markdown link，不另外列裸網址。
+- 題目 metadata 只保留 `Difficulty` 與 `Topic`。
+- `Difficulty` 使用 badge，例如 `<span class="difficulty basic">basic</span>`。
+- 若標題已標示 `示範題`、`課堂練習`、`回家練習` 或 `進階練習`，不要再於 metadata 重複列出建議時機。
 - 解題內容採「題目 + 分層提示 + 解題想法 + 參考程式碼」。
 - 題目格式：
 
 ```text
-## Problem Name
+## 示範題：[Problem Name](https://example.com/problem)
 
-- OJ:
-- Link:
-- Difficulty: basic / standard / challenge
-- Topic:
-- 建議時機: 示範題 / 課堂練習 / 回家練習 / 進階練習
+- Difficulty: <span class="difficulty basic">basic</span>
+- Topic: topic names
 
 ### 題目重點
 ### 提示 1
@@ -81,20 +90,6 @@ Lesson N：課程名稱
 - 教材中的數學式使用 LaTeX 語法，例如 `$\pm 2.1 \times 10^9$`、`$A \times B$`。
 - 行內公式用 `$...$`，獨立公式用 `$$...$$`。
 - 純文字說明中出現的數字與變數若有數學意義，應使用 LaTeX。
-
-## C++ 與開發環境
-
-- C++ 標準：C++17。
-- 一開始就使用競賽常見模板。
-- 主線環境：macOS / Linux-like terminal workflow。
-- Windows 使用 WSL2 + Ubuntu 取得相同的 Linux-like terminal。
-- 環境設定放在 Lesson 0，不做獨立 setup 頁面。
-- 推薦編譯與執行流程：
-
-```bash
-g++ -std=c++17 -O2 -Wall main.cpp
-./a.out < 1.in
-```
 
 ## OJ 題源
 

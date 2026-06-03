@@ -16,9 +16,9 @@
 
 C++ 需要明確宣告變數型別。常用的整數型別有兩種：
 
-| 型別 | 大小 | 可表示範圍 |
-|------|------|-----------|
-| `int` | 32-bit | 約 $\pm 2.1 \times 10^9$ |
+| 型別        | 大小   | 可表示範圍                  |
+| ----------- | ------ | --------------------------- |
+| `int`       | 32-bit | 約 $\pm 2.1 \times 10^9$    |
 | `long long` | 64-bit | 約 $\pm 9.2 \times 10^{18}$ |
 
 一般情況下先使用 `int`。當題目說明數值可能超過 $10^9$，或計算過程中會產生大數時，改用 `long long`。
@@ -67,11 +67,11 @@ Python 的 `elif` 在 C++ 寫成 `else if`。
 
 邏輯運算子：
 
-| Python | C++ |
-|--------|-----|
-| `and`  | `&&` |
+| Python | C++    |
+| ------ | ------ |
+| `and`  | `&&`   |
 | `or`   | `\|\|` |
-| `not`  | `!` |
+| `not`  | `!`    |
 
 ```cpp
 if (a >= 0 && a <= 100) {
@@ -91,10 +91,10 @@ for (int i = 1; i <= 5; i++) {
 
 語法為 `for (初始化; 條件; 更新)`。與 Python 對照：
 
-| Python | C++ |
-|--------|-----|
+| Python                  | C++                            |
+| ----------------------- | ------------------------------ |
 | `for i in range(1, 6):` | `for (int i = 1; i <= 5; i++)` |
-| `for i in range(n):` | `for (int i = 0; i < n; i++)` |
+| `for i in range(n):`    | `for (int i = 0; i < n; i++)`  |
 
 `i++` 等同於 `i += 1`。
 
@@ -109,19 +109,10 @@ while (n > 1) {
 }
 ```
 
-## 示範題：ZeroJudge a002 簡易加法
+## 示範題：[ZeroJudge a002 簡易加法](https://zerojudge.tw/ShowProblem?problemid=a002)
 
-<span class="difficulty basic">basic</span>
-
-<div class="problem-meta">
-
-- OJ: ZeroJudge
-- Link: https://zerojudge.tw/ShowProblem?problemid=a002
-- Difficulty: basic
+- Difficulty: <span class="difficulty basic">basic</span>
 - Topic: 整數輸入、加法
-- 建議時機: 示範題
-
-</div>
 
 ### 題目重點
 
@@ -149,19 +140,10 @@ int main() {
 }
 ```
 
-## 示範題：AtCoder ABC086A Product
+## 示範題：[AtCoder ABC086A Product](https://atcoder.jp/contests/abc086/tasks/abc086_a)
 
-<span class="difficulty basic">basic</span>
-
-<div class="problem-meta">
-
-- OJ: AtCoder
-- Link: https://atcoder.jp/contests/abc086/tasks/abc086_a
-- Difficulty: basic
+- Difficulty: <span class="difficulty basic">basic</span>
 - Topic: 條件判斷、整數乘法
-- 建議時機: 示範題
-
-</div>
 
 ### 題目重點
 
