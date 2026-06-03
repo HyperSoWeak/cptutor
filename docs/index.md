@@ -1,32 +1,32 @@
 # CP Tutor
 
-這是一份演算法競賽入門講義，目標是讓只有少量 Python 經驗、未學過 C++ 的學生，能用 C++17 在 online judge 上自行解題。
+演算法競賽入門講義。教材使用 C++17，從 online judge 的基本輸入輸出開始，逐步進入常見競賽題型與演算法。
 
-教材採用 Markdown-first，由 VitePress 產生網站並部署到 GitHub Pages。
+## 適合對象
 
-## 怎麼使用這份講義
+本教材適合曾經接觸過一點程式設計的人，例如知道 `if`、`else`、簡單迴圈的概念，但不需要先學過 C++。
 
-- 從 [Lesson 0: C++ 開發環境與 Online Judge 基本流程](/lessons/00-local-setup-and-oj) 開始。
-- 依序閱讀每堂講義。
-- 每堂課完成示範題與課堂練習。
-- 回家練習放在 `problemsets/`。
-- 進度較快時，可以繼續做 `extras/` 的進階練習題。
+## 學習內容
 
-## 課程節奏
+前期會建立 C++ 解題流程，包含：
 
-每次課程 2 小時：
+- C++17 基本語法
+- 標準輸入與標準輸出
+- 條件判斷與迴圈
+- 陣列、字串與函式
+- 排序、計數與前綴和
+- 常見 online judge 題型
 
-| Time | Activity |
-| --- | --- |
-| 0:00-0:15 | 本堂主題與必要 C++ 語法 |
-| 0:15-0:35 | 一起拆解一題 |
-| 0:35-1:15 | 學生自行實作 2-3 題 |
-| 1:15-1:40 | 討論常見錯誤與 edge cases |
-| 1:40-2:00 | challenge 題或個別進度 |
+後續會進入進階演算法主題，例如：
 
-## Local workflow
+- binary search
+- greedy
+- graph traversal
+- shortest path
+- dynamic programming
 
-```bash
-g++ -std=c++17 -O2 -Wall main.cpp
-./a.out < 1.in
-```
+## 講義形式
+
+每一課會圍繞一組相關題型展開，包含必要語法、觀念說明、示範題、練習題與參考解法。
+
+所有正式題目都會附上 online judge 連結，並標示 basic、standard 或 challenge。

@@ -7,8 +7,7 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     nav: [
-      { text: "課程講義", link: "/lessons/00-local-setup-and-oj" },
-      { text: "練習題", link: "/problemsets/week-01" }
+      { text: "課程講義", link: "/lessons/00-local-setup-and-oj" }
     ],
     sidebar: [
       {
@@ -20,16 +19,7 @@ export default defineConfig({
       {
         text: "課程講義",
         items: [
-          { text: "00. 開發環境與 OJ 流程", link: "/lessons/00-local-setup-and-oj" },
-          { text: "01. I/O + arithmetic", link: "/lessons/01-io-and-arithmetic" },
-          { text: "02. 條件判斷", link: "/lessons/02-conditions" }
-        ]
-      },
-      {
-        text: "練習題",
-        items: [
-          { text: "第 1 週", link: "/problemsets/week-01" },
-          { text: "進階練習", link: "/extras/extra-practice" }
+          { text: "00. 開發環境與 OJ 流程", link: "/lessons/00-local-setup-and-oj" }
         ]
       }
     ],
