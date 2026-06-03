@@ -6,7 +6,11 @@ export default defineConfig({
   base: "/cptutor/",
   cleanUrls: true,
   markdown: {
-    math: true
+    math: true,
+    theme: {
+      light: "catppuccin-latte",
+      dark: "catppuccin-mocha"
+    }
   },
   themeConfig: {
     nav: [
