@@ -1,15 +1,15 @@
-# Setup Overview
+# 環境設定總覽
 
 本教材主線使用 macOS / Linux-like terminal workflow。Windows 使用者透過 WSL2 + Ubuntu 進入同樣的 Linux-like 環境，因此後續編譯與執行指令相同。
 
-## Required Tools
+## 需要的工具
 
 - C++ compiler：`g++`
 - Terminal
 - Text editor：VS Code、Zed、Neovim，或學生熟悉的 editor
 - Online judge account
 
-## First Program
+## 第一個程式
 
 建立 `main.cpp`：
 
@@ -42,13 +42,13 @@ g++ -std=c++17 -O2 -Wall main.cpp
 ./a.out < 1.in
 ```
 
-Expected output:
+預期輸出：
 
 ```text
 8
 ```
 
-## Basic Commands
+## 基本指令
 
 ```bash
 g++ main.cpp
@@ -56,7 +56,7 @@ g++ main.cpp
 ./a.out < 1.in
 ```
 
-Recommended:
+建議指令：
 
 ```bash
 g++ -std=c++17 -O2 -Wall main.cpp

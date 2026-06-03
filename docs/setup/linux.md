@@ -1,4 +1,4 @@
-# Linux Setup
+# Linux 環境設定
 
 以下指令以 Ubuntu / Debian 為例。
 

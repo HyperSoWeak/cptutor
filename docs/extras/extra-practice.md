@@ -1,8 +1,8 @@
-# Reserve Problems
+# 進階練習題
 
-這裡放進度快的學生、補課、或競賽前複習用的備用題。
+這裡放進度較快時可以繼續挑戰的題目。
 
-## Sources
+## 題目來源
 
 - ZeroJudge: https://zerojudge.tw/
 - AtCoder Beginners Selection: https://atcoder.jp/contests/abs
@@ -11,7 +11,7 @@
 - TIOJ: https://tioj.ck.tp.edu.tw/
 - Codeforces Problemset: https://codeforces.com/problemset
 
-## Early Reserve Topics
+## 前期練習主題
 
 ### Input / output
 
@@ -19,13 +19,13 @@
 - basic：單行多數字輸入
 - standard：多行輸入與簡單公式
 
-### Conditions
+### 條件判斷
 
 - basic：奇偶判斷
 - basic：大小比較
 - standard：多 case 分類
 
-### Loops
+### 迴圈
 
 - basic：固定次數加總
 - standard：直到 EOF 或 sentinel

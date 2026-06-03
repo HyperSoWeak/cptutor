@@ -1,8 +1,8 @@
-# macOS Setup
+# macOS 環境設定
 
 macOS 可以使用系統內建的 `clang++`，也可以透過 Homebrew 安裝 `g++`。
 
-## Option 1: Xcode Command Line Tools
+## 選項 1：Xcode Command Line Tools
 
 ```bash
 xcode-select --install
@@ -16,7 +16,7 @@ g++ --version
 
 macOS 上的 `g++` 可能實際指向 `clang++`。對入門競賽題通常足夠。
 
-## Option 2: Homebrew GCC
+## 選項 2：Homebrew GCC
 
 ```bash
 brew install gcc

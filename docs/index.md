@@ -4,12 +4,12 @@
 
 教材採用 Markdown-first，由 VitePress 產生網站並部署到 GitHub Pages。
 
-## 使用方式
+## 怎麼使用這份講義
 
-- 老師依序使用 `lessons/` 上課。
-- 學生每堂課完成 guided problem 與 in-class practice。
-- 回家作業放在 `problemsets/`。
-- 進度快的學生使用 `extras/` 的 reserve problems。
+- 依序閱讀 `lessons/` 的每堂講義。
+- 每堂課完成示範題與課堂練習。
+- 回家練習放在 `problemsets/`。
+- 進度較快時，可以繼續做 `extras/` 的進階練習題。
 
 ## 課程節奏
 
@@ -18,7 +18,7 @@
 | Time | Activity |
 | --- | --- |
 | 0:00-0:15 | 本堂主題與必要 C++ 語法 |
-| 0:15-0:35 | 老師帶解一題 |
+| 0:15-0:35 | 一起拆解一題 |
 | 0:35-1:15 | 學生自行實作 2-3 題 |
 | 1:15-1:40 | 討論常見錯誤與 edge cases |
 | 1:40-2:00 | challenge 題或個別進度 |

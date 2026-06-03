@@ -1,17 +1,17 @@
-# Decisions
+# 決策紀錄
 
-本頁記錄已確認的教材決策，讓課程設計可以 reproduce。
+本頁記錄已確認的教材決策，讓課程設計可以重現。這份文件是專案內部紀錄，不放在學生網站導覽中。
 
-## Audience
+## 目標受眾
 
 - 教材用途：演算法競賽教學講義。
 - 目標受眾：有一點 Python 經驗，但幾乎可視為初學者；未學過 C++。
-- 語言：中英可混用，但至少要有部分中文題目。
+- 語言：教材使用繁體中文，技術名詞與程式碼保留 English。
 - 教學型態：可能一對多，每個人進度不同。
 - 課程長度：無限次。
 - 每次時間：2 小時。
 
-## Site
+## 網站
 
 - 教材呈現：VitePress static site。
 - 內容來源：Markdown-first。
@@ -19,11 +19,12 @@
 - GitHub Pages base path：目前假設 repo name 是 `cptutor`，所以 VitePress `base` 設為 `/cptutor/`。
 - 不使用 pure Vite 作為第一版，因為目前需求是講義、章節導覽、題單與 code block，不是 app-like interactive features。
 - 第一版採 Approach A：VitePress 教材站 + Markdown 題單。
+- 學生網站不包含給老師看的語氣或內部決策頁。
 
-## Teaching Model
+## 課程模式
 
 - 每堂課用一個競賽主題帶 C++ 語法。
-- 每堂課都要搭配上課題目與回家練習題。
+- 每堂課都要搭配課堂題目與回家練習題。
 - 題目安排要讓學生有成就感，前期避免太多 trick 題。
 - 題目難度策略：正常競賽入門。
 - 每堂題目分層：
@@ -32,7 +33,7 @@
   - challenge：給進度快的人。
 - 解題內容：題目 + 分層提示 + 參考解法。
 
-## C++ and Local Setup
+## C++ 與 local setup
 
 - C++ 標準：C++17。
 - C++ 教法：一開始就使用競賽常見模板。
@@ -45,7 +46,7 @@ g++ -std=c++17 -O2 -Wall main.cpp
 ./a.out < 1.in
 ```
 
-## OJ Sources
+## OJ 題源
 
 - 主力：
   - ZeroJudge：中文題、入門題、台灣學生友善。
@@ -56,7 +57,7 @@ g++ -std=c++17 -O2 -Wall main.cpp
   - TIOJ / Sprout OJ：中文競賽題補充。
   - Codeforces 800-1000：補充與混合練習，不放太前期主線。
 
-## Lesson Format
+## 課程格式
 
 ```text
 # Lesson N: Topic
@@ -65,14 +66,14 @@ g++ -std=c++17 -O2 -Wall main.cpp
 ## Required C++ Syntax
 ## Competitive Programming Idea
 ## Template
-## Guided Problem
+## 示範題
 ## In-class Practice
 ## Common Mistakes
 ## Homework
 ## Extra Problems
 ```
 
-## Problem Format
+## 題目格式
 
 ```text
 ## Problem Name
@@ -81,7 +82,7 @@ g++ -std=c++17 -O2 -Wall main.cpp
 - Link:
 - Difficulty: basic / standard / challenge
 - Topic:
-- Recommended timing: in-class / homework / extra
+- Recommended timing: 示範題 / in-class / homework / extra
 
 ### Why this problem
 ### Hint 1

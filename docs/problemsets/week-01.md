@@ -1,6 +1,6 @@
-# Week 01 Problemset
+# 第 1 週練習題
 
-## In-class
+## 課堂練習
 
 ### PracticeA
 
@@ -11,7 +11,7 @@
 - OJ: AtCoder
 - Link: https://atcoder.jp/contests/abs/tasks/practice_1
 - Topic: input, output, arithmetic
-- Recommended timing: guided
+- 建議練習時機：示範題
 
 </div>
 
@@ -23,11 +23,11 @@
 
 - OJ: ZeroJudge or local
 - Topic: input, output
-- Recommended timing: in-class
+- 建議練習時機：課堂練習
 
 </div>
 
-## Homework
+## 回家練習
 
 ### Product
 
@@ -38,7 +38,7 @@
 - OJ: AtCoder
 - Link: https://atcoder.jp/contests/abs/tasks/abc086_a
 - Topic: condition, parity
-- Recommended timing: homework
+- 建議練習時機：回家練習
 
 </div>
 
@@ -51,7 +51,7 @@
 - OJ: Kattis
 - Link: https://open.kattis.com/problems/tarifa
 - Topic: arithmetic, repeated input
-- Recommended timing: homework
+- 建議練習時機：回家練習
 
 </div>
 
@@ -64,6 +64,6 @@
 - OJ: Kattis
 - Link: https://open.kattis.com/problems/planina
 - Topic: formula
-- Recommended timing: optional challenge
+- 建議練習時機：選做 challenge
 
 </div>
