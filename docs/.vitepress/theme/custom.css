@@ -30,6 +30,72 @@
   background: #ffedd5;
 }
 
+.spoiler {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 1.45rem;
+  margin-left: 0.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  cursor: help;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.spoiler::before {
+  content: "Topic";
+}
+
+.spoiler::after {
+  position: absolute;
+  bottom: calc(100% + 0.45rem);
+  left: 50%;
+  z-index: 20;
+  width: max-content;
+  max-width: min(22rem, calc(100vw - 2rem));
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-elv);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+  content: attr(data-topic);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 0.15rem);
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease,
+    visibility 120ms ease;
+  visibility: hidden;
+  white-space: normal;
+}
+
+.spoiler:hover::after,
+.spoiler:focus::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
+
+.spoiler:focus {
+  color: var(--vp-c-text-1);
+  outline: 2px solid var(--vp-c-brand-3);
+  outline-offset: 2px;
+}
+
 .problem-meta {
   display: grid;
   gap: 0.35rem;
