@@ -5,6 +5,9 @@ export default defineConfig({
   description: "演算法競賽入門講義",
   base: "/cptutor/",
   cleanUrls: true,
+  markdown: {
+    math: true
+  },
   themeConfig: {
     nav: [
       { text: "課程講義", link: "/lessons/00-local-setup-and-oj" }
