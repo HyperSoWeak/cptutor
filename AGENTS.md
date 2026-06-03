@@ -1,6 +1,6 @@
 # 教材規範
 
-本文件記錄可重複套用的教材規範。一次性修改紀錄、已完成狀態、特定頁面目前內容不放在這裡。
+本文件記錄可重複套用的教材規範。
 
 ## 受眾與語言
 
@@ -13,18 +13,17 @@
 ## 網站與部署
 
 - 技術：VitePress。
-- 內容來源：Markdown-first。
 - 部署：GitHub Pages。
 - Package manager：pnpm。
 - GitHub Pages base path 目前依 repo name 使用 `/cptutor/`。
-- 不使用 pure Vite，除非未來需要 app-like interactive features。
+- 不引入額外前端框架。
 
 ## 課程設計
 
 - Lesson 是一次可完整學習的課程單元，不是單一主題百科。
 - 每個 lesson 以一組競賽題型或解題流程為核心，帶入必要 C++ 語法。
 - Lesson 內容應能順著閱讀與講解，避免教案表格式 section。
-- 練習題可以直接放在 lesson 內；獨立 `problemsets/` 不作為第一版主要入口。
+- 練習題放在 lesson 內，不做獨立 `problemsets/` 目錄。
 - 每堂課應包含課堂練習與少量回家練習。
 - 題目難度分層：
   - basic：建立成就感。
@@ -68,7 +67,7 @@ Lesson N：課程名稱
 - Link:
 - Difficulty: basic / standard / challenge
 - Topic:
-- Recommended timing: 示範題 / 課堂練習 / 回家練習 / 進階練習
+- 建議時機: 示範題 / 課堂練習 / 回家練習 / 進階練習
 
 ### 題目重點
 ### 提示 1
@@ -93,8 +92,28 @@ g++ -std=c++17 -O2 -Wall main.cpp
 
 ## OJ 題源
 
-- 中文題優先來源：ZeroJudge。
-- 英文入門題來源：AtCoder Beginners Selection、AtCoder ABC A/B、Kattis。
-- 中後期演算法題源：CSES。
-- TIOJ / Sprout OJ 可作為中文競賽題補充。
-- Codeforces 800-1000 可作為補充與混合練習，不作前期主線。
+### 入門期
+
+- ZeroJudge：中文題敘，適合語法、條件判斷、迴圈、陣列與簡單模擬
+- AtCoder Beginners Selection（ABS）：適合熟悉基本輸入輸出與簡單思考題
+- AtCoder ABC A/B 題：短題敘、難度穩定，適合入門練習
+- CSES Introductory Problems：挑選簡單題使用，不建議整包照順序刷
+
+### 基礎建立期
+
+- CSES：中期主線，演算法分類完整，適合主題式訓練
+- AtCoder ABC C/D 題：練習基礎演算法、實作能力與比賽感
+- Codeforces 800–1200：作為補充練習，不建議當主線
+- Kattis：補充題源，適合練英文題敘與雜題
+
+### 中文補充
+
+- TIOJ：台灣競賽題來源，適合中後期練習
+- ZeroJudge：APCS、中文題敘與特定主題補充
+- 洛谷：題單完整，適合作為中文演算法補充；P 題難度標記不穩定，選題時需自行確認
+
+### 不建議前期作為主線
+
+- Codeforces：題目混雜、trick 較多，門檻偏高
+- LeetCode：面試導向，不是競賽主線
+- HackerRank：偏語法與面試訓練，不太適合作為競程主線

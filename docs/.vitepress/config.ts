@@ -19,7 +19,8 @@ export default defineConfig({
       {
         text: "課程講義",
         items: [
-          { text: "Lesson 0：開發環境與 OJ 流程", link: "/lessons/00-local-setup-and-oj" }
+          { text: "Lesson 0：開發環境與 OJ 流程", link: "/lessons/00-local-setup-and-oj" },
+          { text: "Lesson 1：整數、條件判斷與迴圈", link: "/lessons/01-integers-conditions-loops" }
         ]
       }
     ],
