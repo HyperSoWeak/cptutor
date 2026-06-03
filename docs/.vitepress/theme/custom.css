@@ -1,0 +1,37 @@
+:root {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #60a5fa;
+  --vp-c-sponsor: #16a34a;
+}
+
+.difficulty {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  padding: 0 0.5rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.difficulty.basic {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.difficulty.standard {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.difficulty.challenge {
+  color: #9a3412;
+  background: #ffedd5;
+}
+
+.problem-meta {
+  display: grid;
+  gap: 0.35rem;
+  margin: 1rem 0;
+}
