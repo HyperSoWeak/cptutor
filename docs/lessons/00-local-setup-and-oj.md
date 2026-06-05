@@ -254,25 +254,15 @@ cout << "hello, " << s << '\n';
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     string s;
     cin >> s;
     cout << "hello, " << s << '\n';
-
-    return 0;
 }
 ```
 
 ## 練習
 
-### 必做
-
 - [ZeroJudge a001. 哈囉](https://zerojudge.tw/ShowProblem?problemid=a001)
-
-### 選做
-
 - [AtCoder Beginners Selection - PracticeA](https://atcoder.jp/contests/abs/tasks/practice_1)
 
 ## 常見錯誤

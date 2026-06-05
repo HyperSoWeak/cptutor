@@ -129,14 +129,9 @@ while (n > 1) {
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     int a, b;
     cin >> a >> b;
     cout << a + b << '\n';
-
-    return 0;
 }
 ```
 
@@ -168,15 +163,10 @@ int main() {
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     int a, b;
     cin >> a >> b;
     if ((a * b) % 2 == 0) cout << "Even\n";
     else cout << "Odd\n";
-
-    return 0;
 }
 ```
 
