@@ -113,3 +113,61 @@
   gap: 0.35rem;
   margin: 1rem 0;
 }
+
+.problem-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.problem-check {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--vp-c-brand-1);
+}
+
+.problem-check svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.check-empty-bg {
+  color: var(--vp-c-bg-soft);
+}
+
+.check-border {
+  color: var(--vp-c-text-3);
+}
+
+.problem-check:hover .check-empty-bg {
+  color: var(--vp-c-brand-soft);
+}
+
+.problem-check:hover .check-border {
+  color: var(--vp-c-brand-1);
+}
+
+.problem-link {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  transition: color 120ms ease;
+}
+
+.problem-link:hover {
+  text-decoration: underline;
+}
+
+.problem-item.done .problem-link {
+  color: var(--vp-c-text-3);
+  text-decoration: line-through;
+}

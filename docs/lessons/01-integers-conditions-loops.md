@@ -174,19 +174,23 @@ int main() {
 
 ### 課堂練習
 
-- [AtCoder ABC087A Buying Sweets](https://atcoder.jp/contests/abc087/tasks/abc087_a) <span class="difficulty basic">basic</span> <span class="spoiler" tabindex="0" data-topic="整數除法、取餘數" aria-label="Topic: 整數除法、取餘數"></span>
-- [AtCoder ABC081A Placing Marbles](https://atcoder.jp/contests/abc081/tasks/abc081_a) <span class="difficulty basic">basic</span> <span class="spoiler" tabindex="0" data-topic="字元輸入、計數" aria-label="Topic: 字元輸入、計數"></span>
-- [CSES 1068 Weird Algorithm](https://cses.fi/problemset/task/1068) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="while 迴圈、奇偶判斷" aria-label="Topic: while 迴圈、奇偶判斷"></span>
-- [AtCoder ABC051B Sum of Three Integers](https://atcoder.jp/contests/abc051/tasks/abc051_b) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="巢狀迴圈、計數" aria-label="Topic: 巢狀迴圈、計數"></span>
+<ul class="problem-list">
+  <Problem id="l1-c1" href="https://atcoder.jp/contests/abc087/tasks/abc087_a" title="AtCoder ABC087A Buying Sweets" difficulty="basic" topic="整數除法、取餘數" />
+  <Problem id="l1-c2" href="https://atcoder.jp/contests/abc081/tasks/abc081_a" title="AtCoder ABC081A Placing Marbles" difficulty="basic" topic="字元輸入、計數" />
+  <Problem id="l1-c3" href="https://cses.fi/problemset/task/1068" title="CSES 1068 Weird Algorithm" difficulty="standard" topic="while 迴圈、奇偶判斷" />
+  <Problem id="l1-c4" href="https://atcoder.jp/contests/abc051/tasks/abc051_b" title="AtCoder ABC051B Sum of Three Integers" difficulty="standard" topic="巢狀迴圈、計數" />
+</ul>
 
 ### 回家練習
 
-- [AtCoder ABC083A Libra](https://atcoder.jp/contests/abc083/tasks/abc083_a) <span class="difficulty basic">basic</span> <span class="spoiler" tabindex="0" data-topic="整數加法、大小比較" aria-label="Topic: 整數加法、大小比較"></span>
-- [AtCoder ABC088A Infinite Coins](https://atcoder.jp/contests/abc088/tasks/abc088_a) <span class="difficulty basic">basic</span> <span class="spoiler" tabindex="0" data-topic="取餘數、條件判斷" aria-label="Topic: 取餘數、條件判斷"></span>
-- [ZeroJudge a004 文文的求婚](https://zerojudge.tw/ShowProblem?problemid=a004) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="閏年判斷、多筆輸入" aria-label="Topic: 閏年判斷、多筆輸入"></span>
-- [ZeroJudge a005 Eva 的回家作業](https://zerojudge.tw/ShowProblem?problemid=a005) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="迴圈、等差等比判斷" aria-label="Topic: 迴圈、等差等比判斷"></span>
-- [AtCoder ABC081B Shift only](https://atcoder.jp/contests/abc081/tasks/abc081_b) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="while 迴圈、整除判斷" aria-label="Topic: while 迴圈、整除判斷"></span>
-- [ZeroJudge a010 因數分解](https://zerojudge.tw/ShowProblem?problemid=a010) <span class="difficulty challenge">challenge</span> <span class="spoiler" tabindex="0" data-topic="迴圈、因數分解" aria-label="Topic: 迴圈、因數分解"></span>
+<ul class="problem-list">
+  <Problem id="l1-h1" href="https://atcoder.jp/contests/abc083/tasks/abc083_a" title="AtCoder ABC083A Libra" difficulty="basic" topic="整數加法、大小比較" />
+  <Problem id="l1-h2" href="https://atcoder.jp/contests/abc088/tasks/abc088_a" title="AtCoder ABC088A Infinite Coins" difficulty="basic" topic="取餘數、條件判斷" />
+  <Problem id="l1-h3" href="https://zerojudge.tw/ShowProblem?problemid=a004" title="ZeroJudge a004 文文的求婚" difficulty="standard" topic="閏年判斷、多筆輸入" />
+  <Problem id="l1-h4" href="https://zerojudge.tw/ShowProblem?problemid=a005" title="ZeroJudge a005 Eva 的回家作業" difficulty="standard" topic="迴圈、等差等比判斷" />
+  <Problem id="l1-h5" href="https://atcoder.jp/contests/abc081/tasks/abc081_b" title="AtCoder ABC081B Shift only" difficulty="standard" topic="while 迴圈、整除判斷" />
+  <Problem id="l1-h6" href="https://zerojudge.tw/ShowProblem?problemid=a010" title="ZeroJudge a010 因數分解" difficulty="challenge" topic="迴圈、因數分解" />
+</ul>
 
 ## 常見錯誤
 
