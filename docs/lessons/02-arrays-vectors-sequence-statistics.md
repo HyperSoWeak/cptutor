@@ -336,18 +336,22 @@ int main() {
 
 ### 課堂練習
 
-- [AtCoder ABC113B Palace](https://atcoder.jp/contests/abc113/tasks/abc113_b) <span class="difficulty basic">basic</span> <span class="spoiler" tabindex="0" data-topic="vector、最小差值、index" aria-label="Topic: vector、最小差值、index"></span>
-- [CSES Increasing Array](https://cses.fi/problemset/task/1094/) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="相鄰元素、long long、序列調整" aria-label="Topic: 相鄰元素、long long、序列調整"></span>
-- [AtCoder ABC064C Colorful Leaderboard](https://atcoder.jp/contests/abc064/tasks/abc064_c) <span class="difficulty challenge">challenge</span> <span class="spoiler" tabindex="0" data-topic="分類計數、範圍判斷" aria-label="Topic: 分類計數、範圍判斷"></span>
+<ul class="problem-list">
+  <Problem id="l2-c1" href="https://atcoder.jp/contests/abc113/tasks/abc113_b" title="AtCoder ABC113B Palace" difficulty="basic" topic="vector、最小差值、index" />
+  <Problem id="l2-c2" href="https://cses.fi/problemset/task/1094/" title="CSES Increasing Array" difficulty="standard" topic="相鄰元素、long long、序列調整" />
+  <Problem id="l2-c3" href="https://atcoder.jp/contests/abc064/tasks/abc064_c" title="AtCoder ABC064C Colorful Leaderboard" difficulty="challenge" topic="分類計數、範圍判斷" />
+</ul>
 
 ### 回家練習
 
-- [ZeroJudge f345 新手練習題—陣列](https://zerojudge.tw/ShowProblem?problemid=f345) <span class="difficulty basic">basic</span> <span class="spoiler" tabindex="0" data-topic="陣列、反向輸出、index" aria-label="Topic: 陣列、反向輸出、index"></span>
-- [ZeroJudge c290 APCS 2017-0304-1秘密差](https://zerojudge.tw/ShowProblem?problemid=c290) <span class="difficulty basic">basic</span> <span class="spoiler" tabindex="0" data-topic="字串走訪、位置奇偶、總和" aria-label="Topic: 字串走訪、位置奇偶、總和"></span>
-- [AtCoder ABC121B Can you solve this?](https://atcoder.jp/contests/abc121/tasks/abc121_b) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="vector、內積、巢狀迴圈" aria-label="Topic: vector、內積、巢狀迴圈"></span>
-- [ZeroJudge c299 1. 連號或不連號](https://zerojudge.tw/ShowProblem?problemid=c299) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="最大值、最小值、連續整數判斷" aria-label="Topic: 最大值、最小值、連續整數判斷"></span>
-- [ZeroJudge c295 APCS-2016-1029-2最大和](https://zerojudge.tw/ShowProblem?problemid=c295) <span class="difficulty standard">standard</span> <span class="spoiler" tabindex="0" data-topic="巢狀迴圈、每列最大值、總和" aria-label="Topic: 巢狀迴圈、每列最大值、總和"></span>
-- [AtCoder ABC072C Together](https://atcoder.jp/contests/abc072/tasks/arc082_a) <span class="difficulty challenge">challenge</span> <span class="spoiler" tabindex="0" data-topic="計數陣列、相鄰值統計" aria-label="Topic: 計數陣列、相鄰值統計"></span>
+<ul class="problem-list">
+  <Problem id="l2-h1" href="https://zerojudge.tw/ShowProblem?problemid=f345" title="ZeroJudge f345 新手練習題—陣列" difficulty="basic" topic="陣列、反向輸出、index" />
+  <Problem id="l2-h2" href="https://zerojudge.tw/ShowProblem?problemid=c290" title="ZeroJudge c290 APCS 2017-0304-1秘密差" difficulty="basic" topic="字串走訪、位置奇偶、總和" />
+  <Problem id="l2-h3" href="https://atcoder.jp/contests/abc121/tasks/abc121_b" title="AtCoder ABC121B Can you solve this?" difficulty="standard" topic="vector、內積、巢狀迴圈" />
+  <Problem id="l2-h4" href="https://zerojudge.tw/ShowProblem?problemid=c299" title="ZeroJudge c299 1. 連號或不連號" difficulty="standard" topic="最大值、最小值、連續整數判斷" />
+  <Problem id="l2-h5" href="https://zerojudge.tw/ShowProblem?problemid=c295" title="ZeroJudge c295 APCS-2016-1029-2最大和" difficulty="standard" topic="巢狀迴圈、每列最大值、總和" />
+  <Problem id="l2-h6" href="https://atcoder.jp/contests/abc072/tasks/arc082_a" title="AtCoder ABC072C Together" difficulty="challenge" topic="計數陣列、相鄰值統計" />
+</ul>
 
 ## 常見錯誤
 
