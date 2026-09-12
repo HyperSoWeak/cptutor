@@ -32,7 +32,8 @@ export default defineConfig({
           { text: "L3：排序與資料整理", link: "/lessons/03-sorting-and-data-organization" },
           { text: "L4：字串、字元與函式", link: "/lessons/04-strings-chars-functions" },
           { text: "L5：時間複雜度、暴力解與預處理", link: "/lessons/05-time-complexity-bruteforce-preprocessing" },
-          { text: "L6：遞迴入門與枚舉", link: "/lessons/06-recursion-enumeration" }
+          { text: "L6：遞迴入門與枚舉", link: "/lessons/06-recursion-enumeration" },
+          { text: "L7：Binary Search", link: "/lessons/07-binary-search" }
         ]
       }
     ],
