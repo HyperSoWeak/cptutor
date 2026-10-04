@@ -1,19 +1,19 @@
-# Lesson 7：Binary Search
+# Lesson 7：二分搜
 
 ## 本課目標
 
 完成後應具備以下能力：
 
-- 理解 binary search 適用於有序資料或單調條件。
-- 手寫 binary search，在已排序陣列中找指定數字。
+- 理解二分搜適用於有序資料或單調條件。
+- 手寫二分搜，在已排序陣列中找指定數字。
 - 說明搜尋區間、停止條件，以及每次更新邊界的原因。
 - 手寫第一個大於等於或大於指定值的位置，再對照 STL 用法。
 - 使用 `binary_search` 判斷數字是否存在。
 - 使用 `lower_bound` 找第一個大於等於 $X$ 的位置。
 - 使用 `upper_bound` 找第一個大於 $X$ 的位置。
 - 用 `lower_bound` 與 `upper_bound` 統計範圍內的數量。
-- 手寫 binary search 找最後一個可行答案。
-- 理解 answer binary search 的基本形式。
+- 手寫二分搜找最後一個可行答案。
+- 理解對答案二分的基本形式。
 
 ## 為什麼可以折半查找
 
@@ -31,9 +31,9 @@
 
 要找 $6$ 時，可以先看中間位置。若中間值太小，答案只可能在右半邊；若中間值太大，答案只可能在左半邊。每次都能丟掉大約一半範圍，因此查找速度很快。
 
-Binary search 的複雜度是 $O(\log N)$。當 $N = 10^5$ 時，大約只需要十幾次到二十次檢查。
+二分搜的複雜度是 $O(\log N)$。當 $N = 10^5$ 時，大約只需要十幾次到二十次檢查。
 
-## 手寫 binary search：找指定數字
+## 手寫二分搜：找指定數字
 
 先考慮最單純的問題：在由小到大排序的陣列 `a` 中找出 $x$ 的位置。
 
@@ -97,13 +97,13 @@ while (left <= right) {
 ## 示範題：[ZeroJudge d732 二分搜尋法](https://zerojudge.tw/ShowProblem?problemid=d732)
 
 - Difficulty: <span class="difficulty basic">basic</span>
-- Topic: 手寫 binary search、指定值查找
+- Topic: 手寫二分搜、指定值查找
 
 ### 題目重點
 
 給定嚴格遞增的數列與多筆查詢。對每個查詢值，若存在就輸出它的 $1$-based 位置，否則輸出 $0$；每筆答案各占一行。
 
-數列已排序，且沒有重複值，可以直接練習最基本的 binary search。
+數列已排序，且沒有重複值，可以直接練習最基本的二分搜。
 
 ### 提示 1
 
@@ -196,7 +196,7 @@ while (left <= right) {
 
 ## 使用 STL 查找
 
-C++ 已經提供常用的 binary search 工具。使用前必須先確認資料已排序。
+C++ 已經提供常用的二分搜工具。使用前必須先確認資料已排序。
 
 ### 判斷是否存在
 
@@ -325,9 +325,9 @@ int main() {
 }
 ```
 
-## 對答案做 binary search
+## 對答案二分
 
-STL 可以處理很多查找題，但有些題目要自己對答案做 binary search。這類題目常見形式是：
+STL 可以處理很多查找題，但有些題目要自己對答案二分。這類題目常見形式是：
 
 ```text
 答案越大越容易達成，或答案越小越容易達成。
@@ -366,7 +366,7 @@ cout << low << '\n';
 ## 示範題：[AtCoder ABC146C Buy an Integer](https://atcoder.jp/contests/abc146/tasks/abc146_c)
 
 - Difficulty: <span class="difficulty challenge">challenge</span>
-- Topic: answer binary search、單調性、long long
+- Topic: 對答案二分、單調性、long long
 
 ### 題目重點
 
@@ -384,7 +384,7 @@ $$
 
 ### 提示 2
 
-可以寫一個 `can(n)` 判斷是否買得起 $n$，再 binary search 最大可行值。
+可以寫一個 `can(n)` 判斷是否買得起 $n$，再用二分搜找最大可行值。
 
 ### 解題想法
 
@@ -395,7 +395,7 @@ $$
 不可行：ans + 1 ...
 ```
 
-因此可以用 binary search 找最後一個可行值。$0$ 只代表「買不起任何正整數」，不需要呼叫 `canBuy(0)`；上界 $10^9 + 1$ 也不會送進判斷函式。
+因此可以用二分搜找最後一個可行值。$0$ 只代表「買不起任何正整數」，不需要呼叫 `canBuy(0)`；上界 $10^9 + 1$ 也不會送進判斷函式。
 
 要注意 $A$、$B$、$X$ 都可能很大，計算價格時要使用 `long long`。另外，答案最大只會到 $10^9$。
 
@@ -436,9 +436,9 @@ int main() {
 }
 ```
 
-## 怎麼判斷能不能 binary search
+## 怎麼判斷能不能二分搜
 
-Binary search 不只是「資料有排序」。更重要的是能把答案分成連續的兩段：
+二分搜不只是「資料有排序」。更重要的是能把答案分成連續的兩段：
 
 ```text
 false false false true true true
@@ -450,7 +450,7 @@ false false false true true true
 true true true false false false
 ```
 
-如果可行與不可行交錯出現，就不能直接 binary search。
+如果可行與不可行交錯出現，就不能直接二分搜。
 
 看到題目時，可以問：
 
@@ -463,7 +463,7 @@ true true true false false false
 ### 課堂練習
 
 <ul class="problem-list">
-  <Problem id="l7-c1" href="https://zerojudge.tw/ShowProblem?problemid=d732" title="ZeroJudge d732 二分搜尋法" difficulty="basic" topic="手寫 binary search、指定值查找" />
+  <Problem id="l7-c1" href="https://zerojudge.tw/ShowProblem?problemid=d732" title="ZeroJudge d732 二分搜尋法" difficulty="basic" topic="手寫二分搜、指定值查找" />
   <Problem id="l7-c2" href="https://atcoder.jp/contests/abc231/tasks/abc231_c" title="AtCoder ABC231C Counting 2" difficulty="standard" topic="排序、lower_bound、查詢數量" />
   <Problem id="l7-c3" href="https://atcoder.jp/contests/abc212/tasks/abc212_c" title="AtCoder ABC212C Min Difference" difficulty="standard" topic="排序、lower_bound、最小差" />
 </ul>
@@ -471,11 +471,11 @@ true true true false false false
 ### 回家練習
 
 <ul class="problem-list">
-  <Problem id="l7-h1" href="https://zerojudge.tw/ShowProblem?problemid=f679" title="ZeroJudge f679 公會成員" difficulty="basic" topic="手寫 binary search、存在性查詢" />
+  <Problem id="l7-h1" href="https://zerojudge.tw/ShowProblem?problemid=f679" title="ZeroJudge f679 公會成員" difficulty="basic" topic="手寫二分搜、存在性查詢" />
   <Problem id="l7-h2" href="https://atcoder.jp/contests/abc077/tasks/arc084_a" title="AtCoder ABC077C Snuke Festival" difficulty="standard" topic="lower_bound、upper_bound、組合計數" />
   <Problem id="l7-h3" href="https://zerojudge.tw/ShowProblem?problemid=e541" title="ZeroJudge e541 Where is the marble" difficulty="standard" topic="排序、手寫 lower_bound、第一次出現位置" />
-  <Problem id="l7-h4" href="https://atcoder.jp/contests/abc146/tasks/abc146_c" title="AtCoder ABC146C Buy an Integer" difficulty="challenge" topic="answer binary search、最大可行值" />
-  <Problem id="l7-h5" href="https://cses.fi/problemset/task/1620/" title="CSES Factory Machines" difficulty="challenge" topic="answer binary search、最小可行時間" />
+  <Problem id="l7-h4" href="https://atcoder.jp/contests/abc146/tasks/abc146_c" title="AtCoder ABC146C Buy an Integer" difficulty="challenge" topic="對答案二分、最大可行值" />
+  <Problem id="l7-h5" href="https://cses.fi/problemset/task/1620/" title="CSES Factory Machines" difficulty="challenge" topic="對答案二分、最小可行時間" />
   <Problem id="l7-h6" href="https://atcoder.jp/contests/abc143/tasks/abc143_d" title="AtCoder ABC143D Triangles" difficulty="challenge" topic="排序、upper_bound、三角形計數" />
 </ul>
 
@@ -488,6 +488,6 @@ true true true false false false
 - 搜尋閉區間時使用 `left < right`，漏掉最後一個元素。
 - 找第一次出現的位置，卻在遇到相等值時直接停止。
 - 手寫 `lower_bound` 得到 $n$ 後，仍存取 `a[n]`。
-- 手寫 binary search 時混用不同區間定義，導致漏解或 infinite loop。
-- answer binary search 沒有先確認單調性。
+- 手寫二分搜時混用不同區間定義，導致漏解或 infinite loop。
+- 對答案二分沒有先確認單調性。
 - 計算 `mid` 或價格時使用 `int`，導致 overflow。
