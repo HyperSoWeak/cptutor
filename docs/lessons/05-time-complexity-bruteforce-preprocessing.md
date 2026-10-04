@@ -327,7 +327,7 @@ int main() {
 | 多次區間和查詢 | prefix sum |
 | 多次區間加值 | 差分陣列 |
 
-本課先建立判斷方式。之後的課程會更完整地練習 prefix sum、binary search、greedy 等工具。
+本課先建立判斷方式。之後的課程會更完整地練習 prefix sum、二分搜、greedy 等工具。
 
 ## 練習
 

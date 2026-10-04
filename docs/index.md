@@ -19,7 +19,7 @@
 
 後續會進入進階演算法主題，例如：
 
-- binary search
+- 二分搜
 - greedy
 - graph traversal
 - shortest path
