@@ -34,7 +34,8 @@ export default defineConfig({
           { text: "L5：時間複雜度、暴力解與預處理", link: "/lessons/05-time-complexity-bruteforce-preprocessing" },
           { text: "L6：遞迴入門與枚舉", link: "/lessons/06-recursion-enumeration" },
           { text: "L7：二分搜", link: "/lessons/07-binary-search" },
-          { text: "L8：Greedy 入門", link: "/lessons/08-greedy-intro" }
+          { text: "L8：Greedy 入門", link: "/lessons/08-greedy-intro" },
+          { text: "L9：排序演算法與分治", link: "/lessons/09-sorting-algorithms-divide-and-conquer" }
         ]
       }
     ],
