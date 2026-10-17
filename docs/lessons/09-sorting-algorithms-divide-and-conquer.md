@@ -1,4 +1,4 @@
-# Lesson 9：排序演算法概念與 Divide and Conquer
+# Lesson 9：排序演算法與分治
 
 ## 本課目標
 
@@ -167,14 +167,14 @@ Merge sort 就是典型例子：
 
 因為每一層合併總共花 $O(N)$，而層數約為 $O(\log N)$，所以總複雜度是 $O(N \log N)$。
 
-## 示範題：[洛谷 P1177 排序](https://www.luogu.com.cn/problem/P1177)
+## 示範題：[ZeroJudge a104 排序](https://zerojudge.tw/ShowProblem?problemid=a104)
 
 - Difficulty: <span class="difficulty standard">standard</span>
 - Topic: merge sort、divide and conquer、排序
 
 ### 題目重點
 
-給定 $N$ 個數字，將它們由小到大排序後輸出。
+本題有多筆測資，以 EOF 結束。每筆測資給定 $n$ 個正整數，將它們由小到大排序後輸出，數字之間以空白隔開。
 
 ### 提示 1
 
@@ -250,22 +250,23 @@ int main() {
     cin.tie(nullptr);
 
     int n;
-    cin >> n;
 
-    a.resize(n);
-    tempArray.resize(n);
+    while (cin >> n) {
+        a.resize(n);
+        tempArray.resize(n);
 
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+
+        mergeSort(0, n);
+
+        for (int i = 0; i < n; i++) {
+            if (i > 0) cout << ' ';
+            cout << a[i];
+        }
+        cout << '\n';
     }
-
-    mergeSort(0, n);
-
-    for (int i = 0; i < n; i++) {
-        if (i > 0) cout << ' ';
-        cout << a[i];
-    }
-    cout << '\n';
 }
 ```
 
@@ -299,18 +300,20 @@ mid - i
 
 這樣就能在排序過程中順便計算 inversion count。
 
-## 示範題：[洛谷 P1908 逆序对](https://www.luogu.com.cn/problem/P1908)
+## 示範題：[ZeroJudge d542 10810 - Ultra-QuickSort](https://zerojudge.tw/ShowProblem?problemid=d542)
 
 - Difficulty: <span class="difficulty challenge">challenge</span>
 - Topic: merge sort、inversion count、divide and conquer
 
 ### 題目重點
 
-給定一個序列，求 inversion count。也就是有幾組 $i < j$ 滿足 $a_i > a_j$。
+本題有多筆測資，以 $n = 0$ 結束。每筆測資給定 $n$ 個整數（$n < 500000$），求只能交換相鄰兩數時，至少要交換幾次才能由小到大排序。
+
+和 a539 相同，答案就是 inversion count，也就是有幾組 $i < j$ 滿足 $a_i > a_j$。
 
 ### 提示 1
 
-雙層迴圈是 $O(N^2)$，無法處理很大的 $N$。
+本題 $n$ 可能接近 $5 \times 10^5$，雙層迴圈是 $O(N^2)$，會太慢。
 
 ### 提示 2
 
@@ -329,6 +332,8 @@ Inversion 可以分成三類：
 若 `a[i] <= a[j]`，表示左邊目前元素不會和 `a[j]` 形成 inversion，先放 `a[i]`。
 
 若 `a[i] > a[j]`，因為左半已排序，`a[i]` 到 `a[mid - 1]` 都大於 `a[j]`，所以一次增加 `mid - i`。
+
+答案最大約為 $\dfrac{n(n-1)}{2} \approx 1.25 \times 10^{11}$，超過 `int` 範圍，必須使用 `long long`。
 
 ### 參考程式碼
 
@@ -389,16 +394,17 @@ int main() {
     cin.tie(nullptr);
 
     int n;
-    cin >> n;
 
-    a.resize(n);
-    tempArray.resize(n);
+    while (cin >> n && n != 0) {
+        a.resize(n);
+        tempArray.resize(n);
 
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+
+        cout << mergeSort(0, n) << '\n';
     }
-
-    cout << mergeSort(0, n) << '\n';
 }
 ```
 
@@ -418,9 +424,9 @@ int main() {
 ### 課堂練習
 
 <ul class="problem-list">
-  <Problem id="l9-c1" href="https://www.luogu.com.cn/problem/P1177" title="洛谷 P1177 排序" difficulty="basic" topic="排序、merge sort、sort" />
+  <Problem id="l9-c1" href="https://zerojudge.tw/ShowProblem?problemid=a225" title="ZeroJudge a225 明明愛排列" difficulty="basic" topic="merge sort、自訂比較條件" />
   <Problem id="l9-c2" href="https://zerojudge.tw/ShowProblem?problemid=a539" title="ZeroJudge a539 Flip Sort" difficulty="standard" topic="inversion count、相鄰交換" />
-  <Problem id="l9-c3" href="https://www.luogu.com.cn/problem/P1908" title="洛谷 P1908 逆序对" difficulty="challenge" topic="merge sort、inversion count" />
+  <Problem id="l9-c3" href="https://atcoder.jp/contests/abc190/tasks/abc190_f" title="AtCoder ABC190F Shift and Inversions" difficulty="challenge" topic="merge sort、inversion count、觀察變化量" />
 </ul>
 
 ### 回家練習
